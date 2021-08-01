@@ -1,4 +1,5 @@
 <ol class="post-list">
+  {{#each posts}}
   <li>
     <article class="post">
       <div class="title">
@@ -6,8 +7,13 @@
         <span>({{post_url}})</span>
       </div>
       <div class="meta">
+        Written by {{post.user.username}} on
+        {{post.created_at}}
+        |
         <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
+        <span>({{post.post_url}})</span>
       </div>
     </article>
   </li>
+  {{/each}}
 </ol>
