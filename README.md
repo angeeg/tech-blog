@@ -11,7 +11,7 @@ Use this app the interact with other coders, share your thoughts, struggles, ide
 
 <a href="https://angeeg-tech-blog.herokuapp.com/">Tech Blog Website</a>
 
-<img src=""/>
+<img src="screenshot.png"/>
 
 ## Credit 
 This application was created by <a href="https://github.com/angeeg">angeeg</a>.
