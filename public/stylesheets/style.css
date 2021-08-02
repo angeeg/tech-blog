@@ -7,22 +7,25 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    background-color: rgb(137, 198, 100);
     color: #333;
   }
   
-  a {
+  a, #logout {
     text-decoration: none;
-    color: #225ca3;
+    color: black;
+    font-size: 20px;
     font-weight: bold;
     transition: color .1s;
+    padding-left: 10px;
   }
   
-  a:hover {
-    color: #3486eb;
+  a:hover, #logout:hover {
+    color: rgb(137, 198, 100);
   }
   
   button {
-    background-color: #225ca3;
+    background-color: #7d7d7d;
     border: 0;
     padding: 1%;
     color: white;
@@ -33,7 +36,7 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: rgb(137, 198, 100);
   }
   
   .post-list {
@@ -77,15 +80,26 @@
   header {
     border-bottom: 1px solid #ccc;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 1%;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    color: rgb(137, 198, 100);
+    background-color: #7d7d7d;
+    height: 150px;
+  }
+
+  .header-title {
+      margin: 5px;
+      height: 75px;
+      width: fit-content;
+      background-color: rgb(137, 198, 100) ;
+      color: black;
+      font-weight: bolder;
+      font-size: 48px;
   }
   
-  header h1 {
-    font-size: 1em;
-  }
-  
+   
   main {
     flex: 1;
     padding: 2% 4%;
@@ -161,9 +175,11 @@
   }
   
   footer {
+    color: black;
     border-top: 1px solid #ccc;
     display: flex;
     justify-content: center;
     padding: 1%;
     font-size: 110%;
+    background-color: #7d7d7d;
   }
